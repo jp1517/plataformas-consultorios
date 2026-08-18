@@ -1,50 +1,51 @@
 # Visión del producto
 
-> **Plantilla del curso · Ingeniería de Software I · SIS3407**
-> Este documento es el primer entregable del semestre y la base de todo lo que viene después.
-> Se entrega completo en la **semana 4** y se presenta ante el grupo.
->
-> **Cómo usarla:** copia este archivo a tu repositorio como `docs/vision-del-producto.md`, borra las instrucciones en gris de cada apartado y escribe tu contenido en su lugar. Conserva los títulos.
-
 ---
 
-**Autor:**
-**Fecha de la última versión:**
+**Autor: Juan Pablo Quiroz Ortega**
+**Fecha de la última versión**
 **Repositorio:**
 
 ---
 
 ## 1. Descripción del sistema
 
-*Instrucción: nombre del sistema y qué hace, en un párrafo que cualquier persona entienda sin ser del área. Si necesitas usar una palabra técnica para explicarlo, todavía no está listo.*
+**Nombre del sistema: MediSync**
 
-**Nombre del sistema:**
-
-**Descripción:**
+**Descripción: Es un asistente digital para consultorios médicos que ayuda a los pacientes a agendar y confirmar sus consultas desde el teléfono a cualquier hora, mientras organiza el día del doctor y del personal de recepción para que nadie espere de más, no se empalmen los horarios y no se pierdan las notas de cada visita.**
 
 ---
 
 ## 2. Problema y usuarios
 
-*Instrucción: qué problema resuelve, a quién le sirve y, muy importante, qué hace esa gente hoy para arreglárselas sin el sistema. Esa última parte es la que revela el problema real.*
 
-**El problema:**
+**El problema: Los consultorios médicos privados pierden mucho dinero y tiempo por pacientes que faltan a sus citas sin avisar o que llegan a deshoras, provocando salas de espera saturadas, citas empalmadas y desorganización general. Esto le sirve tanto al médico y al personal de recepción (que reducen el estrés administrativo y optimizan su jornada) como a los pacientes (que evitan largas esperas y procesos tediosos para conseguir un turno).**
 
-**Cómo se resuelve hoy sin el sistema:**
+**Cómo se resuelve hoy sin el sistema: La recepcionista anota todo en una libreta de papel o en una hoja de cálculo básica. Para intentar que los pacientes asistan, pasa horas del día enviando mensajes uno por uno o haciendo llamadas directas para reconfirmar. Si un paciente cancela de último momento o simplemente no llega, ese espacio de tiempo se pierde por completo porque no hay forma ágil de reasignarlo a alguien más en lista de espera; además, el médico tiene que buscar manualmente entre carpetas físicas de papel para revisar el historial antes de hacer pasar a la persona.**
 
 **Usuarios del sistema:**
 
 | Tipo de usuario | Qué necesita del sistema | Qué le preocupa |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+|Médico |Consultar el historial clínico de forma inmediata y ver su agenda del día ordenada en tiempo real sin empalmes. |Que el sistema sea lento durante la consulta, le haga perder tiempo llenando campos innecesarios o exponga datos médicos confidenciales.|
+| Paciente|Agendar, consultar, confirmar o reprogramar sus citas desde su teléfono de manera rápida y sin tener que llamar. |Que el proceso sea confuso, que sus citas no queden realmente registradas o que le cobren penalizaciones por fallas en la plataforma. |
+|Recepcionista/Secretaria |Un panel central para registrar llegadas a sala de espera, monitorear confirmaciones de asistencia y gestionar cobros del día. |Que el sistema permita citas dobles en el mismo horario, sea difícil de usar cuando hay mucha gente esperando o se caiga la conexión. |
 
-*Instrucción: necesitas al menos dos tipos de usuario con necesidades distintas. Si los dos quieren exactamente lo mismo, probablemente sean el mismo usuario.*
 
 **Un conflicto entre usuarios:**
 
-*Instrucción: describe algo que un usuario quiera y que a otro le estorbe. Ahí está tu primera decisión de diseño real.*
+Lo que quiere el Médico:
+El médico necesita ver en una sola pantalla todo el detalle clínico del paciente (diagnósticos anteriores, notas de evolución, recetas previas y antecedentes familiares) para tomar decisiones médicas rápidas y certeras durante los pocos minutos que dura la consulta.
+
+Por qué le estorba a la Recepcionista y al Paciente:
+A la recepcionista toda esa información clínica le estorba visualmente, ya que satura la pantalla con datos técnicos que ella no necesita y solo busca validar rápidamente la hora de la cita, marcar la llegada y cobrar. Además, al paciente le resultaría confuso e invasivo ver terminología médica compleja en su flujo de reserva o consulta de turnos.
+
+La decisión de diseño:
+
+Implementar una arquitectura de vistas estrictamente segmentada por roles (Control de Acceso Basado en Roles / RBAC):
+Vista Operativa (Recepción): Interfaz ágil y minimalista centrada únicamente en el flujo de la sala de espera, estatus de confirmación y cobro, ocultando por completo las notas médicas tanto por ergonomía visual como por confidencialidad.
+Vista Clínica (Médico): Espacio de trabajo enfocado exclusivamente en el expediente clínico interactivo y la cronología médica del paciente.
+Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la selección de horarios, recordatorios y gestión de su propia cita.
 
 ---
 
