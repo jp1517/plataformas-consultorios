@@ -42,8 +42,8 @@ A la recepcionista toda esa información clínica le estorba visualmente, ya que
 
 La decisión de diseño:
 
-Implementar una arquitectura de vistas estrictamente segmentada por roles (Control de Acceso Basado en Roles / RBAC):
-Vista Operativa (Recepción): Interfaz ágil y minimalista centrada únicamente en el flujo de la sala de espera, estatus de confirmación y cobro, ocultando por completo las notas médicas tanto por ergonomía visual como por confidencialidad.
+Implementar una arquitectura de vistas segmentada por roles:
+Vista Operativa (Secretaria): Interfaz ágil y minimalista centrada únicamente en el flujo de la sala de espera, estatus de confirmación y cobro, ocultando por completo las notas médicas.
 Vista Clínica (Médico): Espacio de trabajo enfocado exclusivamente en el expediente clínico interactivo y la cronología médica del paciente.
 Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la selección de horarios, recordatorios y gestión de su propia cita.
 
