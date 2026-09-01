@@ -92,7 +92,6 @@ Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la se
 
 **Reglas de negocio que ya identifiqué:**
 
-*Instrucción: reglas que no son obvias desde fuera y que alguien que conoce el dominio tendría que explicarte. Si no encuentras ninguna, tu caso puede ser demasiado simple.*
 
 1. Si un paciente falta a una cita sin cancelarla con al menos cierto tiempo de anticipación (por ejemplo, 2 horas), el sistema debe registrarlo como inasistencia y notificar a recepción, quien decide si requiere confirmación telefónica antes de dejarlo agendar de nuevo.
 2. Cuando un paciente cancela con suficiente anticipación, su horario se libera automáticamente y se ofrece al primer paciente en la lista de espera para ese médico y esa fecha.
