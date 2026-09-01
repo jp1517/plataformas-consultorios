@@ -103,7 +103,7 @@ Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la se
 ## 5. Ciclo de vida elegido
 
 
-**Modelo elegido:** Incremental
+**Modelo elegido:** Prototipo Rápido
 
 **Por qué le conviene a este proyecto:** Se va a construir MediSync por partes. Se hace esto porque el médico, la recepcionista y el paciente quieren cosas distintas del sistema, así que seguramente se tendrán que ajustar pantallas y reglas sobre la marcha. No es un proyecto crítico, ir mostrando avances y corrigiendo lo que no funcione.
 
