@@ -120,18 +120,3 @@ Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la se
 *Por qué la descarté:* No la usé porque este modelo es para proyectos grandes y riesgosos, donde en cada vuelta tienes que hacer un análisis formal de riesgos. Para un proyecto escolar de este tamaño es demasiado trámite y proceso — no le suma nada, solo lo hace más lento.
 
 ---
-
-## Antes de entregar
-
-Reviso que el documento cumpla lo siguiente:
-
-- [ ] La descripción del apartado 1 se entiende sin ser del área
-- [ ] Hay al menos dos tipos de usuario con necesidades distintas
-- [ ] Identifiqué un conflicto real entre usuarios
-- [ ] El alcance dice qué queda fuera, no solo qué queda dentro
-- [ ] Las exclusiones son específicas, no genéricas
-- [ ] Identifiqué el tipo de sistema y al menos dos atributos de calidad
-- [ ] Anoté al menos tres reglas de negocio no obvias
-- [ ] Justifiqué el ciclo de vida contra dos alternativas descartadas
-- [ ] El documento está en mi repositorio y se puede leer desde el navegador
-- [ ] Borré todas las instrucciones en cursiva de la plantilla
