@@ -51,74 +51,73 @@ Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la se
 
 ## 3. Alcance
 
-*Instrucción: lo que escribes en "fuera del alcance" es lo que después evita que el proyecto crezca sin control. Sé específico: "reportes" no dice nada, "reportes de ventas mensuales exportables a PDF" sí.*
 
 ### Dentro del alcance
 
--
--
--
--
+- Registro y autenticación de tres roles (paciente, médico, recepcionista) con vistas y permisos diferenciados.
+- Agendamiento, reprogramación y cancelación de citas por parte del paciente desde su teléfono, con horarios disponibles en tiempo real.
+- Recordatorios y confirmaciones automáticas de citas (notificación push o mensaje) antes de la consulta.
+- Panel de recepción para registrar la llegada del paciente a sala de espera, ver el estatus de confirmación del día y marcar el cobro de cada consulta.
+- Agenda del médico en tiempo real, con validación automática para que no se empalmen dos citas en el mismo horario.
 
 ### Explícitamente fuera del alcance
 
--
--
--
+- Consultas por videollamada.
+- Administración de múltiples sucursales o cadenas de consultorios desde una sola cuenta.
+- Recetas electrónicas con firma digital certificada ante autoridades sanitarias.
 
 **Por qué queda fuera:**
 
-*Instrucción: para al menos una de las exclusiones, explica la razón. Puede ser tiempo, complejidad, o que no aporta al problema central.*
+**Videollamada:** no ataca el problema (que es de citas presenciales), solo suma trabajo.
+**Multi-sucursal:** tu diseño es para un consultorio, no una cadena — meterlo complica el sistema sin necesidad.
+**Recetas con firma digital certificada:** es un tema legal/regulatorio (COFEPRIS, firma avanzada), no de software — fuera del alcance de un proyecto de este tamaño.
 
 ---
 
 ## 4. Tipo de sistema y restricciones
 
-*Instrucción: identifica de qué tipo es tu sistema y qué te obliga a garantizar ese tipo. Un sistema de información y un sistema crítico no se diseñan igual.*
 
-**Tipo de sistema:**
+**Tipo de sistema:** De información
 
-*(De información · Embebido · Crítico · Web y SaaS · De datos y análisis)*
 
-**Por qué es de ese tipo:**
+**Por qué es de ese tipo:** Es sistema de información porque su función principal es guardar, mostrar y aplicar reglas sobre datos (citas, pacientes, expedientes). No controla hardware ni pone vidas en riesgo. Su naturaleza real es gestionar información.
 
 **Atributos de calidad que impone:**
 
 | Atributo | Por qué importa en mi caso | Qué pasa si no se cumple |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Confidencialidad / Seguridad| El expediente clínico contiene datos médicos sensibles que solo el médico debe poder ver; la recepción y otros pacientes nunca deben tener acceso a ellos.| Se filtran datos médicos de un paciente, lo que rompe la confianza en el consultorio y puede tener consecuencias legales para el médico.|
+| Disponibilidad| Los pacientes deben poder agendar citas a cualquier hora del día, y recepción depende del sistema durante todo el horario de atención.| Si el sistema cae en horario de consultas, la recepcionista vuelve al papel y se pierden citas o pagos; si cae de noche, el paciente no puede agendar.|
+| Consistencia / Integridad de los datos| La agenda del médico no debe permitir dos citas en el mismo horario, y una cita cancelada debe liberar el espacio de forma correcta.| Dos pacientes llegan a la misma hora o un horario cancelado nunca se reasigna, repitiendo exactamente el problema que el sistema busca resolver.|
 
 **Reglas de negocio que ya identifiqué:**
 
 *Instrucción: reglas que no son obvias desde fuera y que alguien que conoce el dominio tendría que explicarte. Si no encuentras ninguna, tu caso puede ser demasiado simple.*
 
-1.
-2.
-3.
+1. Si un paciente falta a una cita sin cancelarla con al menos cierto tiempo de anticipación (por ejemplo, 2 horas), el sistema debe registrarlo como inasistencia y notificar a recepción, quien decide si requiere confirmación telefónica antes de dejarlo agendar de nuevo.
+2. Cuando un paciente cancela con suficiente anticipación, su horario se libera automáticamente y se ofrece al primer paciente en la lista de espera para ese médico y esa fecha.
+3. Un paciente no puede tener dos citas activas con el mismo médico el mismo día; el sistema debe rechazar el intento de duplicado.
 
 ---
 
 ## 5. Ciclo de vida elegido
 
-*Instrucción: este apartado se trabaja en la semana 3, después de ver los modelos de desarrollo. La justificación pesa más que la elección: no hay un modelo correcto, hay uno defendible para tu caso.*
 
-**Modelo elegido:**
+**Modelo elegido:** Incremental
 
-**Por qué le conviene a este proyecto:**
+**Por qué le conviene a este proyecto:** Se va a construir MediSync por partes. Se hace esto porque el médico, la recepcionista y el paciente quieren cosas distintas del sistema, así que seguramente se tendrán que ajustar pantallas y reglas sobre la marcha. No es un proyecto crítico, ir mostrando avances y corrigiendo lo que no funcione.
 
 *Instrucción: argumenta con las características reales de tu caso. Estabilidad de los requisitos, disponibilidad del cliente, nivel de riesgo, tamaño del equipo, frecuencia de entregas esperada.*
 
 ### Alternativas descartadas
 
-**Alternativa 1:**
+**Alternativa 1:** Cascada
 
-*Por qué la descarté:*
+*Por qué la descarté:*  No la usé porque este modelo necesita que tengas TODOS los requisitos claros y fijos desde el principio, antes de empezar a programar. En mi caso ya sé que eso no va a pasar, porque los tres usuarios quieren cosas diferentes y voy a tener que ir ajustando. Además con cascada no se ve nada funcionando hasta el final, y eso es arriesgado si tengo poco tiempo.
 
-**Alternativa 2:**
+**Alternativa 2:** Espiral
 
-*Por qué la descarté:*
+*Por qué la descarté:* No la usé porque este modelo es para proyectos grandes y riesgosos, donde en cada vuelta tienes que hacer un análisis formal de riesgos. Para un proyecto escolar de este tamaño es demasiado trámite y proceso — no le suma nada, solo lo hace más lento.
 
 ---
 
