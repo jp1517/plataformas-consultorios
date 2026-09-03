@@ -96,6 +96,7 @@ Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la se
 1. Si un paciente falta a una cita sin cancelarla con al menos cierto tiempo de anticipación (por ejemplo, 2 horas), el sistema debe registrarlo como inasistencia y notificar a recepción, quien decide si requiere confirmación telefónica antes de dejarlo agendar de nuevo.
 2. Cuando un paciente cancela con suficiente anticipación, su horario se libera automáticamente y se ofrece al primer paciente en la lista de espera para ese médico y esa fecha.
 3. Un paciente no puede tener dos citas activas con el mismo médico el mismo día; el sistema debe rechazar el intento de duplicado.
+4. Permisos y paneles distintos para cada usuario.
 
 ---
 
