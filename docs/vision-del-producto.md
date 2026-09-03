@@ -77,7 +77,7 @@ Vista Autoservicio (Paciente): Portal simplificado enfocado únicamente en la se
 ## 4. Tipo de sistema y restricciones
 
 
-**Tipo de sistema:** De información
+**Tipo de sistema:** De información. A la Medida
 
 
 **Por qué es de ese tipo:** Es sistema de información porque su función principal es guardar, mostrar y aplicar reglas sobre datos (citas, pacientes, expedientes). No controla hardware ni pone vidas en riesgo. Su naturaleza real es gestionar información.
