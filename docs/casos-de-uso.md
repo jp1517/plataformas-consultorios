@@ -1,8 +1,5 @@
 # Casos de uso · MediSync
 
-## Diagrama
-
-Ver `docs/diagramas/casos-de-uso.drawio` (editable) y `docs/diagramas/casos-de-uso.png` (exportado).
 
 **Actores:** Paciente, Recepcionista, Médico.
 
