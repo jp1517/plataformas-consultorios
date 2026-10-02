@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Casos de uso - MediSync" id="medisync-uc">
+    <mxGraphModel dx="1071" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=16;fillColor=none;strokeColor=#333333;" value="MediSync" vertex="1">
+          <mxGeometry height="740" width="580" x="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_paciente" parent="1" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="40" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_recepcion" parent="1" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Recepcionista" vertex="1">
+          <mxGeometry height="60" width="40" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_medico" parent="1" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Médico" vertex="1">
+          <mxGeometry height="60" width="40" x="920" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Agendar una cita" vertex="1">
+          <mxGeometry height="60" width="160" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Reprogramar una cita" vertex="1">
+          <mxGeometry height="60" width="160" x="500" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cancelar una cita" vertex="1">
+          <mxGeometry height="60" width="160" x="700" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Registrar llegada a sala de espera" vertex="1">
+          <mxGeometry height="70" width="180" x="300" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Marcar cobro de consulta" vertex="1">
+          <mxGeometry height="70" width="180" x="520" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Reagendar citas de un médico ausente" vertex="1">
+          <mxGeometry height="80" width="200" x="300" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Consultar el historial clínico" vertex="1">
+          <mxGeometry height="70" width="180" x="560" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="uc8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Registrar la consulta de un paciente" vertex="1">
+          <mxGeometry height="80" width="200" x="560" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="actor_paciente" style="edgeStyle=none;html=1;endArrow=none;" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="actor_paciente" style="edgeStyle=none;html=1;endArrow=none;" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="actor_paciente" style="edgeStyle=none;html=1;endArrow=none;" target="uc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="actor_recepcion" style="edgeStyle=none;html=1;endArrow=none;" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="actor_recepcion" style="edgeStyle=none;html=1;endArrow=none;" target="uc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="actor_recepcion" style="edgeStyle=none;html=1;endArrow=none;" target="uc6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="actor_medico" style="edgeStyle=none;html=1;endArrow=none;" target="uc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="actor_medico" style="edgeStyle=none;html=1;endArrow=none;" target="uc8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
