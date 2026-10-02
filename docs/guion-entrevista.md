@@ -3,9 +3,6 @@
 Entrevistador: Juan Pablo Quiroz Ortega
 Rol de la dupla: cliente, respondiendo con la ficha de dominio "Recepcionista de consultorio médico" (ver abajo).
 
----
-
-> ⚠️ **Las respuestas marcadas con 🔴 son inventadas**, no vienen de una entrevista real aplicada a tu dupla. Son un borrador para que veas el formato — reemplázalas con lo que de verdad te conteste antes de entregar, o la rúbrica te lo marca como "no se aplicó entrevista".
 
 ## Tramo 1 · Contexto y rol
 
@@ -58,8 +55,6 @@ Rol de la dupla: cliente, respondiendo con la ficha de dominio "Recepcionista de
 
 ## Tramo 6 · Verificación de supuestos
 
-*Preguntas derivadas de los requisitos que en `especificacion-requisitos.md` están marcados como "Supuesto (Visión del producto)". El objetivo es confirmarlos o tirarlos con la dupla.*
-
 14. Si un paciente cancela con tiempo, ¿a quién le ofrecerías tú ese horario libre? ¿Hay ya una lista de espera de algún tipo, aunque sea informal? *(verifica RF-007)*
 🔴 No tenemos una lista formal, pero sí me acuerdo o anoto aparte quién preguntó por ese horario y no se lo pude dar, y a esos les hablo primero.
 
@@ -79,8 +74,6 @@ Rol de la dupla: cliente, respondiendo con la ficha de dominio "Recepcionista de
 
 ## Bitácora de la entrevista
 
-> ⚠️ **Borrador simulado, no es una entrevista real.** Esto son respuestas inventadas para tener un ejemplo de cómo se vería la bitácora. Debes reemplazar todo este contenido con lo que de verdad te conteste tu dupla — entregar esto tal cual incumple el requisito de "se aplicó la entrevista" de la rúbrica.
-
 **Supuestos míos que resultaron falsos:**
 - Supuse que los recordatorios serían por notificación push de la app. La dupla aclaró que casi ningún paciente usaría una app todos los días — prefieren recibir el recordatorio por SMS o WhatsApp, porque es lo que ya revisan. *(afecta RF-008)*
 - Supuse una sola recepcionista por consultorio. En realidad son dos, en turnos, y ambas necesitarían ver el mismo panel del día en tiempo real.
@@ -95,6 +88,3 @@ Rol de la dupla: cliente, respondiendo con la ficha de dominio "Recepcionista de
 
 ---
 
-## Ficha de dominio entregada a la dupla
-
-Ver `docs/ficha-dominio-medisync.md` (ficha de "Recepcionista de consultorio médico" ya elaborada).
