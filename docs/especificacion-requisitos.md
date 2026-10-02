@@ -84,4 +84,3 @@ MediSync es un asistente digital para consultorios médicos privados que permite
 | RF-013, RF-014 | Registrar la consulta de un paciente |
 | RF-001 | (transversal a todos los casos de uso — control de acceso) |
 
-*Revisar tras la entrevista: si algún RF no aparece en ningún caso de uso, o algún caso de uso no tiene RF asociado, es señal de que falta un requisito o sobra un caso de uso (ver la reflexión del material del curso sobre el punto 7).*
