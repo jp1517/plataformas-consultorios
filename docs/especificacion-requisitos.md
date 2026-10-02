@@ -4,7 +4,6 @@
 
 ## Propósito y alcance
 
-*(Retomado de `vision-del-producto.md`, Unidad 1.)*
 
 MediSync es un asistente digital para consultorios médicos privados que permite a los pacientes agendar y confirmar sus consultas desde el teléfono a cualquier hora, mientras organiza el día del doctor y del personal de recepción para evitar esperas, empalmes de horario y pérdida de notas de cada visita.
 
