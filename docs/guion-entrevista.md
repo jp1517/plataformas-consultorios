@@ -1,7 +1,7 @@
 # Guion de entrevista · MediSync
 
 Entrevistador: Juan Pablo Quiroz Ortega
-Rol de la dupla: cliente, respondiendo con la ficha de dominio "Recepcionista de consultorio médico" (ver abajo).
+Rol de la dupla: cliente, respondiendo con la ficha de dominio "Recepcionista de consultorio médico".
 
 
 ## Tramo 1 · Contexto y rol
