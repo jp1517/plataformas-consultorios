@@ -84,3 +84,18 @@ MediSync es un asistente digital para consultorios médicos privados que permite
 | RF-013, RF-014 | Registrar la consulta de un paciente |
 | RF-001 | (transversal a todos los casos de uso — control de acceso) |
 
+
+Revisión de la dupla
+Comentarios:
+
+Revisé los requisitos funcionales y en general se entienden bien. pero hay dos observaciones: 
+
+* En RF-009 me parece correcta la tolerancia de 15 minutos, así lo manejamos.
+* En RF-012 agregaría que el sistema debería poder deshacer una marca de cobro si la recepcionista se equivoca de paciente.
+* El detalle de CU-01 con el flujo alterno de "horario ocupado" se siente muy real.
+* Me gustaría que el de "Reagendar citas de un médico ausente" (CU-06) aclarara qué pasa si ningún horario alterno funciona para el paciente, porque a veces simplemente no hay dónde moverlo ese día.
+
+Cambios solicitados y aplicados:
+
+Ninguno que cambie el alcance. la observación de RF-012 queda como mejora para una siguiente versión, no bloquea la entrega.
+
