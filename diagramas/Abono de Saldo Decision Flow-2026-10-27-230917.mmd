@@ -1,0 +1,14 @@
+sequenceDiagram
+    actor Rec as Recepcionista
+    participant Web as App web
+    participant Cob as Cobros
+    participant Age as Agenda
+    participant BD as Base de datos
+    Rec->>Web: Registra un abono de 500
+    Web->>Cob: abonar(cuenta, 500)
+    Cob->>Age: Que servicio se atendio?
+    Age-->>Cob: Consulta general
+    Cob->>BD: Guarda el pago
+    BD-->>Cob: Listo
+    Cob-->>Web: Pago registrado
+    Web-->>Rec: Muestra el nuevo saldo
