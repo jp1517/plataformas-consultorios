@@ -1,0 +1,17 @@
+classDiagram
+    class CuentaDePaciente {
+        -saldo: double
+        -pagos: List~Pago~
+        +abonar(monto) string
+        +consultarSaldo() double
+    }
+    class Pago {
+        -monto: double
+        -fecha: Date
+    }
+    class Paciente {
+        -nombre: string
+        -especie: string
+    }
+    Paciente "1" --> "1" CuentaDePaciente : tiene
+    CuentaDePaciente "1" --> "*" Pago : registra
