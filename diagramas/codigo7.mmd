@@ -1,0 +1,17 @@
+flowchart TD
+rec([Recepcionista])
+
+subgraph sistema[Sistema de la clinica]
+web[App web<br/>React]
+api[API<br/>Node.js]
+db[(Base de datos<br/>PostgreSQL)]
+end
+
+lab[Laboratorio externo]
+
+rec -->|usa| web
+web -->|HTTPS/JSON| api
+api -->|lee y escribe| db
+api -->|SFTP| lab
+
+style api fill:#ff5d00,color:#fff
