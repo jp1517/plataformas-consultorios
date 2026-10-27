@@ -1,0 +1,21 @@
+erDiagram
+    PACIENTE ||--o{ CITA : tiene
+    PACIENTE ||--|| CUENTA : tiene
+    CITA ||--o| EXPEDIENTE : genera
+    CUENTA ||--o{ PAGO : registra
+
+    PACIENTE {
+        int id
+        string nombre
+        string especie
+    }
+    CITA {
+        int id
+        date fecha
+        string motivo
+    }
+    PAGO {
+        int id
+        decimal monto
+        date fecha
+    }
