@@ -2,9 +2,9 @@
 
 ---
 
-**Autor: Juan Pablo Quiroz Ortega**
-**Fecha de la última versión**
-**Repositorio:**
+**Autor:** Juan Pablo Quiroz Ortega  
+**Fecha de la última versión:** 3 de septiembre de 2026  
+**Repositorio:** https://github.com/jp1517/plataformas-consultorios
 
 ---
 

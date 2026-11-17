@@ -31,9 +31,9 @@ MediSync es un asistente digital para consultorios médicos privados que permite
 
 | Versión | Fecha | Cambio |
 |---|---|---|
-| 0.1 | *(fecha)* | Primera versión, basada en `vision-del-producto.md`. Todos los requisitos como supuestos. |
-| 0.2 | *(fecha, simulada)* | Entrevista simulada: se confirma el límite de 2h, la restricción de citas duplicadas y la confidencialidad del expediente. Se corrige RF-008 (SMS/WhatsApp en vez de solo push) y se agrega nota sobre la terminal de pago aparte en RF-012. Pendiente sustituir por la entrevista real. |
-| 0.3 | *(fecha, simulada)* | Respuestas completas de la entrevista simulada incorporadas. Se agrega RF-016 (registro de pacientes nuevos), se ajusta RF-009 con tolerancia de 15 min y regla de confirmación tras inasistencias repetidas, y se aclara en RF-007 que la lista de espera es informal (el sistema la formaliza). Pendiente sustituir por la entrevista real. |
+| 0.1 | 29/09/2026 | Primera versión, basada en `vision-del-producto.md`. Todos los requisitos como supuestos. |
+| 0.2 | 01/10/2026 | Entrevista simulada: se confirma el límite de 2h, la restricción de citas duplicadas y la confidencialidad del expediente. Se corrige RF-008 (SMS/WhatsApp en vez de solo push) y se agrega nota sobre la terminal de pago aparte en RF-012. Pendiente sustituir por la entrevista real. |
+| 0.3 | 01/10/2026 | Respuestas completas de la entrevista simulada incorporadas. Se agrega RF-016 (registro de pacientes nuevos), se ajusta RF-009 con tolerancia de 15 min y regla de confirmación tras inasistencias repetidas, y se aclara en RF-007 que la lista de espera es informal (el sistema la formaliza). Pendiente sustituir por la entrevista real. |
 
 ## Requisitos funcionales
 

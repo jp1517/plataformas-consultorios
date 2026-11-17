@@ -3,9 +3,11 @@
 
 **Actores:** Paciente, Recepcionista, Médico.
 
+Diagrama: [versión en Mermaid](diagramas/casos-de-uso.md) · [versión en draw.io](diagramas/casos-de-uso-2.drawio)
+
 | Caso de uso | Actor(es) | Requisitos que realiza |
 |---|---|---|
-| CU-01 Agendar una cita | Paciente | RF-003, RF-004, RF-008, RF-010 |
+| CU-01 Agendar una cita | Paciente | RF-003, RF-004, RF-008, RF-010, RF-016 |
 | CU-02 Reprogramar una cita | Paciente | RF-003, RF-004, RF-005 |
 | CU-03 Cancelar una cita | Paciente | RF-006, RF-007, RF-009 |
 | CU-04 Registrar llegada a sala de espera | Recepcionista | RF-002, RF-011 |
