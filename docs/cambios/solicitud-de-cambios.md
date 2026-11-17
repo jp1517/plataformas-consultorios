@@ -6,7 +6,7 @@ Propuesta · analizada en [AI-001](analisis-de-impacto-sc-001.md)
 
 ## Quién la pide
 
-Dupla de revisión, en sus comentarios a la especificación de requisitos.
+Emmanuel Alvarado Ríos
 
 ## Qué se pide
 
